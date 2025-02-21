@@ -8,9 +8,9 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/register" element={<Register />} />
         <Route path="*" element={<h2>404 Not Found</h2>} />
       </Routes>
     </Router>
