@@ -46,6 +46,6 @@ export const generateBreakdown = async (taskTitle) => {
 
 // ✅ User Authentication APIs
 export const registerUser = async (userData) => {
-    const response = await post("http://localhost:5000/api/auth/register", userData);
+    const response = await API.post("/auth/register", userData);
     return response.data;
 };
